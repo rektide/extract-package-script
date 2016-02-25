@@ -11,5 +11,9 @@
 		"url": "https://archive.voodoowarez.com/extract-package-script"
 	},
 	"author": "rektide de la faye",
-	"license": "X"
+	"license": "X",
+	"dependencies": {
+		"es6-promisify": "^3.0.0",
+		"resolve": "^1.1.7"
+	}
 }
