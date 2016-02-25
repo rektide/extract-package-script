@@ -1,0 +1,15 @@
+{
+	"name": "extract-package-script",
+	"version": "0.0.0",
+	"description": "Extract a script from a package.json",
+	"main": "extract-package-script.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://archive.voodoowarez.com/extract-package-script"
+	},
+	"author": "rektide de la faye",
+	"license": "X"
+}
