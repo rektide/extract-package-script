@@ -1,6 +1,6 @@
 {
 	"name": "extract-package-script",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Extract a script from a package.json",
 	"main": "extract-package-script.js",
 	"scripts": {
