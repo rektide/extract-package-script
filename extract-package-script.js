@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#!/usr/bin/env node
 "use strict"
 
 var
@@ -20,10 +20,8 @@ function getScript(script, opts){
 	  jsonify= opts&& opts.jsonify|| module.exports.jsonify
 	return function(module){
 		return Promise
-			.resolve(module+ path.sep+ packageFile)
-			.then(script => readFile(script, "utf8"))
-			.then(jsonify)
-			.then(packageJson => packageJson.scripts[script])
+			.resolve(module)
+			.then(packageJson => packageJson[1].scripts[script])
 	}
 }
 
@@ -34,7 +32,7 @@ module.exports.resolve= resolve
 
 module.exports.getScript= getScript
 module.exports.jsonify= JSON.parse
-module.exports.packageFile = "package.json"
+module.exports.packageFile= "package.json"
 
 module.exports.main= main
 module.exports.argPkg= ()=> process.argv[2]
